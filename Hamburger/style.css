@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #272727;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 16px 0;
+}
+
+.header .logo {
+  color: #fff;
+  margin-left: 1rem;
+}
+
+#navbar {
+  width: 65%;
+}
+
+#navbar .hamburger {
+  width: 50px;
+  object-fit: contain;
+  filter: invert(1);
+  display: none;
+}
+
+#navbar .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-links .links {
+  list-style: none;
+}
+
+.nav-links .links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.nav-links .login-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: rgb(70, 70, 177);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-color: red;
+  }
+  #navbar {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background-color: green;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .opacity{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .3);
+    visibility: hidden;
+  }
+
+  .opacity.visible{
+    visibility: visible;
+  }
+
+  #navbar {
+    width: initial;
+    margin-right: 2rem;
+  }
+  #navbar .hamburger {
+    display: block;
+    position: relative;
+    z-index: 10;
+  }
+
+  #navbar .nav-links {
+    position: fixed;
+    flex-direction: column;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    right: 0;
+    top: 83px;
+    padding: 16px 0;
+    gap: 1rem;
+    transition: right .5s ease-in;
+    z-index: 10;
+  }
+
+  #navbar .nav-links.close{
+    right: -300px;
+  }
+
+  .nav-links .links a {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .nav-links .login-btn {
+    width: 90%;
+    font-size: 1.5rem;
+    border-radius: 4px;
+  }
+}
+
