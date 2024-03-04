@@ -38,5 +38,5 @@ const autoType = (ele, words, stopTime, writeTime) => {
 };
 
 autoType(span1, coderArr, 5, 1);
-autoType(span2, actorArr, 5, 1);
-autoType(span3, doctorArr, 5, 1);
+// autoType(span2, actorArr, 5, 1);
+// autoType(span3, doctorArr, 5, 1);
