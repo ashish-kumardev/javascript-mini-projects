@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>password generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="pass-container">
+    <h2 class="title">Password generator</h2>
+
+    <div class="value-box box">
+      <div class="value">
+      </div>
+      <span class="copy">click to copy</span>
+    </div>
+
+    <span class="length">Length : <span class="length-value"></span></span>
+
+    <div class="range-box box">
+      <label for="range">4</label>
+      <input type="range" name="pass-length" id="range" min="4" max="32" value="4">
+      <label for="range">32</label>
+    </div>
+
+    <span class="setting">settings</span>
+
+    <div class="option-box box">
+      <span class="option-title">Include lowercase</span>
+      <div class="option off on">
+        <div class="circle on"></div>
+      </div>
+    </div>
+
+    <div class="option-box box">
+      <span class="option-title">Include uppercase</span>
+      <div class="option off on">
+        <div class="circle on"></div>
+      </div>
+    </div>
+
+    <div class="option-box box">
+      <span class="option-title">Include numbers</span>
+      <div class="option off on">
+        <div class="circle on"></div>
+      </div>
+    </div>
+
+    <div class="option-box box">
+      <span class="option-title">Include symbols</span>
+      <div class="option off on">
+        <div class="circle on"></div>
+      </div>
+    </div>
+
+    <button class="generate-pass">generate password</button>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #6c92cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pass-container {
+  padding: 1rem;
+  background-color: rgb(33, 12, 58);
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 3px 3px rgb(18, 18, 83);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 450px;
+}
+
+.box {
+  width: 100%;
+  background-color: rgb(24, 24, 96);
+  border-radius: 5px;
+  padding: 18px 0;
+}
+
+.value-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 70px;
+}
+
+.value-box .value {
+  width: 100%;
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+.value-box .copy {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.value-box .copy:hover {
+  text-decoration: underline;
+}
+
+.length {
+  color: rgba(255, 255, 255, 0.456);
+  font-size: 14px;
+}
+
+.length .length-value {
+  color: #fff;
+}
+
+.range-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 18px 10px;
+}
+
+.range-box input {
+  width: 100%;
+}
+
+.setting {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.456);
+  font-size: 14px;
+}
+
+.option-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 10px;
+}
+
+.option-title {
+  text-transform: capitalize;
+  margin-left: 1.25rem;
+  font-size: 1.15rem;
+}
+
+.option.off {
+  width: 70px;
+  background-color: rgb(83, 83, 212);
+  height: 35px;
+  border-radius: 50px;
+  position: relative;
+  padding-left: 1px;
+  cursor: pointer;
+}
+
+.option .circle {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  transition: left 0.3s ease-in-out;
+}
+
+.option.on{
+  background-color: blue;
+}
+
+.option.on .circle.on{
+  left: 50%;
+}
+
+.generate-pass{
+  width: 100%;
+  padding: 18px 0;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(to right, #591bda 60%,#06b7ff);
+  cursor: pointer;
+  margin-bottom: .75rem;
+}
