@@ -148,3 +148,29 @@ body {
   cursor: pointer;
   margin-bottom: .75rem;
 }
+
+@media screen and (max-width : 428px) {
+  .pass-container{
+    width: 90%;
+  }
+
+  .value-box .value{
+    font-size: .75rem;
+    overflow: auto;
+    width: 80%;
+  }
+
+  .option-title{
+    margin-left: 0;
+    font-size: .95rem;
+  }
+
+  .option.off{
+    width: 40px;
+    height: 22px;
+  }
+
+  .generate-pass{
+    font-size: 1rem;
+  }
+}
